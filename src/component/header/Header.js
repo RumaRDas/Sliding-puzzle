@@ -15,8 +15,8 @@ const Header = () => {
           </Link>
         </li>
         <li className="nav-list">
-          <Link className="nav-links" to="/blinko">
-            Blinko
+          <Link className="nav-links" to="/blanko">
+            Blanko
           </Link>
         </li>
         <li className="nav-list">

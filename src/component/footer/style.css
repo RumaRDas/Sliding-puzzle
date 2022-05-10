@@ -1,4 +1,5 @@
 #footer {
+    position: absolute;
     height: 50px;
     background: #999999;
     width: 100%;
