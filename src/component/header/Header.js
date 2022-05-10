@@ -4,22 +4,30 @@ import './style.css'
 
 const Header = () => {
   return (
-    <nav className="navbar-Items">
-      <div>
+    <nav id="header" className="navbar-Items fixed-top">
+      <div className="navbar-logo">
         <h1>logo</h1>
       </div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
+      <ul className="nav-menu">
+        <li className="nav-list">
+          <Link className="nav-links" to="/">
+            Home
+          </Link>
         </li>
-        <li>
-          <Link to="/blinko">Blinko</Link>
+        <li className="nav-list">
+          <Link className="nav-links" to="/blinko">
+            Blinko
+          </Link>
         </li>
-        <li>
-          <Link to="/slido">Slido</Link>
+        <li className="nav-list">
+          <Link className="nav-links" to="/slido">
+            Slido
+          </Link>
         </li>
-        <li>
-          <Link to="/tetro">Tetro</Link>
+        <li className="nav-list">
+          <Link className="nav-links" to="/tetro">
+            Tetro
+          </Link>
         </li>
       </ul>
     </nav>

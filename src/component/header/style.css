@@ -1,4 +1,30 @@
 .navbar-Items {
     background: #eeeeee;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    
+    }
+    
+    .navbar-logo {
+        justify-self: start;
+        margin-left: 15px;
+    }
+    
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+        justify-content: end;
+        width: 100vw;
+    }
+    
+    .nav-links {
+        text-decoration: none;
+        padding: 5px;
+        color: rgb(0, 0, 0);
 }
