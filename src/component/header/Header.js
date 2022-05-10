@@ -25,7 +25,7 @@ const Header = () => {
           </Link>
         </li>
         <li className="nav-list">
-          <Link className="nav-links" to="/tetro">
+          <Link className="nav-links border-style" to="/tetro">
             Tetro
           </Link>
         </li>

@@ -27,4 +27,14 @@
         text-decoration: none;
         padding: 5px;
         color: rgb(0, 0, 0);
+        border-right: 1px solid #000000;
+        padding-right: 9px;
+}
+.nav-links:hover {
+    text-decoration: none;
+    color: rgb(223, 170, 110);
+}
+
+.border-style {
+    border: none;
 }
