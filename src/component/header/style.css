@@ -5,41 +5,46 @@
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    
-    }
-    
-    .navbar-logo {
-        justify-self: start;
-        margin-left: 15px;
-    }
-    .logo-img {
-        height: 50px;
-        width: 50px;
-        margin: 15px;
-    }
-    .nav-menu {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 10px;
-        list-style: none;
-        text-align: center;
-        justify-content: end;
-        margin-right: 2rem;
-        width: 100vw;
-    }
-    
-    .nav-links {
-        text-decoration: none;
-        padding: 5px;
-        color: rgb(0, 0, 0);
-        border-right: 1px solid #000000;
-        padding-right: 9px;
 }
+.navbar-logo {
+    justify-self: start;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    margin-right: 2rem;
+    width: 100vw;
+}
+
+.nav-links {
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
 .nav-links:hover {
     text-decoration: none;
-    color: rgb(164, 33, 7);
+    color: rgb(223, 170, 110);
+    }
+    
+    .nav-style {
+        border-right: 1px solid #000000;
+        padding-right: 9px;
 }
 
 .border-style {
     border: none;
 }
+@media screen and (max-width:800px) {}
