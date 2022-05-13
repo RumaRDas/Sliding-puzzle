@@ -1,7 +1,9 @@
 .home_style {
-    position: flex;
-    text-align: center;
-    justify-content: center;
+    position: absolute;
+        float: left;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
 
 .text1_style {
