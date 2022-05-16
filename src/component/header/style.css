@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
+    width: 100%;
 }
 .navbar-logo {
     justify-self: start;
@@ -24,7 +25,7 @@
     list-style: none;
     text-align: center;
     justify-content: end;
-    margin-right: 2rem;
+
     width: 100vw;
 }
 
@@ -47,4 +48,8 @@
 .border-style {
     border: none;
 }
-@media screen and (max-width:800px) {}
+@media screen and (max-width:800px) {
+    .navbar-Items {
+        width: 100%;
+    }
+}
