@@ -1,0 +1,74 @@
+.blanko-H-style {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: red;
+
+}
+
+.blanko-stye {
+    position: absolute;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-style {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: rgb(209, 207, 207);
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.btn-div {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button-style {
+    background-color: #eeeeee;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 400px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button1-style {
+    background-color: #eeeeee;
+    color: rgb(255, 3, 3);
+    border-radius: 4px;
+    border: 1px solid rgb(255, 3, 3);
+    width: 400px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button-style:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: gray;
+    border: none;
+    color: white
+}
+
+.button1-style:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 3, 3);
+    border: none;
+    color: white
+}
