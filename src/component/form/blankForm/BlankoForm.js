@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 import './style.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const BlankoForm = ({
   values,
@@ -21,8 +23,17 @@ export const BlankoForm = ({
       ></input>
     )
   })
+  const handleSubmit = (e) => {
+    e.preventDefault(e)
+    if (matchLetters === values) {
+      alert('Correct')
+    } else {
+      toast.error(`Try again`, { position: toast.POSITION.TOP_CENTER })
+      return
+    }
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="row blanko-H-style">
         <h3>Blanko</h3>
       </div>
@@ -30,8 +41,6 @@ export const BlankoForm = ({
         {selectInput}
         <div className="row btn-div">
           <button className="button-style">Submit</button>
-
-          <button className="button1-style">Reset</button>
         </div>
       </div>
     </form>

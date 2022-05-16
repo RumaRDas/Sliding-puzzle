@@ -7,12 +7,14 @@ import Blanko from './pages/blanko/Blanko'
 import Dashboard from './pages/dashboard/Dashboard'
 import Slido from './pages/slido/Slido'
 import Tetro from './pages/tetro/Tetro'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   return (
     <>
       <>
         <Header />
+        <ToastContainer />
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
           <Route exact path="/blanko" element={<Blanko />} />

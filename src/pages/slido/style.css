@@ -1,0 +1,26 @@
+.slidoStyle {
+
+    text-align: center;
+    justify-content: center;
+}
+
+.slido-H-style {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: red;
+}
+
+.styleTable {
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tdStyle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #333;
+    margin: auto;
+}
