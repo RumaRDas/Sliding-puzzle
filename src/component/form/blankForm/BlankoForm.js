@@ -18,11 +18,18 @@ export const BlankoForm = ({
         className="box-style "
         maxLength={1}
         name={index}
-        value={value.index}
-        placeholder={value}
+        value={values.index}
+        placeholder={
+          index === inputIndex1 ||
+          index === inputIndex2 ||
+          index === inputIndex3
+            ? ''
+            : value
+        }
       ></input>
     )
   })
+
   const handleSubmit = (e) => {
     e.preventDefault(e)
     if (matchLetters === values) {
@@ -40,7 +47,9 @@ export const BlankoForm = ({
       <div className="row blanko-stye">
         {selectInput}
         <div className="row btn-div">
-          <button className="button-style">Submit</button>
+          <button className="button-style" type="submit">
+            Submit
+          </button>
         </div>
       </div>
     </form>
