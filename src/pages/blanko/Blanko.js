@@ -25,7 +25,7 @@ const Blanko = () => {
   matchLetters[inputIndex2] = ''
   matchLetters[inputIndex3] = ''
 
-  //console.log('matchCharacter :', matchLetters)
+  // console.log('matchCharacter :', matchLetters)
   //declearing state
   const [values, setValues] = useState(singleLetter)
 
@@ -38,6 +38,7 @@ const Blanko = () => {
       inputIndex2={inputIndex2}
       inputIndex3={inputIndex3}
       matchLetters={matchLetters}
+      setValues={setValues}
     />
   )
 }

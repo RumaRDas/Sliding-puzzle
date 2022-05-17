@@ -5,12 +5,20 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export const BlankoForm = ({
   values,
+  setValues,
   inputIndex1,
   inputIndex2,
   inputIndex3,
   matchLetters,
 }) => {
-
+  //console.log("VALUES"+values)
+  const handleChange = (e) => {
+    const value = e.target.value
+    const position = e.target.name
+    // console.log('value is ' + value)
+    // console.log('POSITION :' + position)
+    matchLetters[position] = value
+  }
 
   const selectInput = values.map((value, index) => {
     return (
@@ -35,29 +43,37 @@ export const BlankoForm = ({
             ? false
             : true
         }
+        onChange={handleChange}
       ></input>
     )
   })
 
   const handleSubmit = (e) => {
-    e.preventDefault(e)
-    if (matchLetters === values) {
+    e.preventDefault()
+  //  console.log('matchLettersNew', matchLetters)
+    if (JSON.stringify(matchLetters) === JSON.stringify(values)) {
       toast.success('Correct', { position: toast.POSITION.TOP_CENTER })
     } else {
       toast.error(`Try again`, { position: toast.POSITION.TOP_CENTER })
       return
     }
   }
+  const resetGame = (e) => {
+    // console.log('RESETVALUE:', values)
+  }
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <div className="row blanko-H-style">
         <h3>Blanko</h3>
       </div>
       <div className="row blanko-stye">
         {selectInput}
         <div className="row btn-div">
-          <button className="button-style" type="submit">
+          <button className="button-style" type="submit" onClick={handleSubmit}>
             Submit
+          </button>
+          <button className="button-style" type="submit" onClick={resetGame}>
+            Reset
           </button>
         </div>
       </div>
