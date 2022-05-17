@@ -50,7 +50,7 @@ export const BlankoForm = ({
 
   const handleSubmit = (e) => {
     e.preventDefault()
-  //  console.log('matchLettersNew', matchLetters)
+ //console.log('matchLettersNew', matchLetters)
     if (JSON.stringify(matchLetters) === JSON.stringify(values)) {
       toast.success('Correct', { position: toast.POSITION.TOP_CENTER })
     } else {
