@@ -32,7 +32,8 @@ const Blanko = () => {
   //console.log('VALUES: ', values)
 
   return (
-    <BlankoForm
+  <div className='wrap'>
+      <BlankoForm
       values={values}
       inputIndex1={inputIndex1}
       inputIndex2={inputIndex2}
@@ -40,6 +41,7 @@ const Blanko = () => {
       matchLetters={matchLetters}
       setValues={setValues}
     />
+  </div>
   )
 }
 

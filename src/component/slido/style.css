@@ -3,11 +3,65 @@
     width: 450px;
     text-align: center;
     justify-content: center;
+
 }
 
 .tdStyle {
     height: 150px;
     width: 150px;
+    margin: 0;
     border: 1px solid #333;
-    margin: auto;
+}
+
+.pic1 {
+    background: url(../../assets/shrek/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.pic2 {
+    background: url(../../assets/shrek/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic3 {
+    background: url(../../assets/shrek/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic4 {
+    background: url(../../assets/shrek/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic5 {
+    background: url(../../assets/shrek/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic6 {
+    background: url(../../assets/shrek/6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic7 {
+    background: url(../../assets/shrek/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic8 {
+    background: url(../../assets/shrek/8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic9 {
+    background-color: black;
 }

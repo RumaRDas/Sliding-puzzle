@@ -62,21 +62,27 @@ export const BlankoForm = ({
     // console.log('RESETVALUE:', values)
   }
   return (
-    <form>
-      <div className="row blanko-H-style">
-        <h3>Blanko</h3>
-      </div>
-      <div className="row blanko-stye">
-        {selectInput}
-        <div className="row btn-div">
-          <button className="button-style" type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
-          <button className="button-style" type="submit" onClick={resetGame}>
-            Reset
-          </button>
+    <div className="content-wrap">
+      <form>
+        <div className="row blanko-H-style">
+          <h3>Blanko</h3>
         </div>
-      </div>
-    </form>
+        <div className="row blanko-stye">
+          {selectInput}
+          <div className="row btn-div">
+            <button
+              className="button-style"
+              type="submit"
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+            <button className="button-style" type="submit" onClick={resetGame}>
+              Reset
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
   )
 }

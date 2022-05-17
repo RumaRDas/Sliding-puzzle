@@ -16,7 +16,7 @@ function App() {
         <Header />
         <ToastContainer />
         <Routes>
-          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/" element={<Dashboard  />} />
           <Route exact path="/blanko" element={<Blanko />} />
           <Route exact path="/slido" element={<Slido />} />
           <Route exact path="/tetro" element={<Tetro />} />
