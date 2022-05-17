@@ -10,6 +10,8 @@ export const BlankoForm = ({
   inputIndex3,
   matchLetters,
 }) => {
+
+
   const selectInput = values.map((value, index) => {
     return (
       <input
@@ -26,6 +28,13 @@ export const BlankoForm = ({
             ? ''
             : value
         }
+        disabled={
+          index === inputIndex1 ||
+          index === inputIndex2 ||
+          index === inputIndex3
+            ? false
+            : true
+        }
       ></input>
     )
   })
@@ -33,7 +42,7 @@ export const BlankoForm = ({
   const handleSubmit = (e) => {
     e.preventDefault(e)
     if (matchLetters === values) {
-      alert('Correct')
+      toast.success('Correct', { position: toast.POSITION.TOP_CENTER })
     } else {
       toast.error(`Try again`, { position: toast.POSITION.TOP_CENTER })
       return
